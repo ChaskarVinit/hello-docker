@@ -1,22 +1,39 @@
-# hello-docker
+mkdir -p ~/docker-projects/hello-docker && cd ~/docker-projects/hello-docker
+                                                               
+nano index.html
 
-Simple static site served by Nginx (for learning Docker on Kali Linux).
-
-## Project folder (commands I ran)
-
-Run these commands in the terminal (as shown in my Kali root prompt):
-
-```bash
-┌──(root㉿kali)-[~]
-└─# mkdir -p ~/docker-projects/hello-docker && cd ~/docker-projects/hello-docker
-
-                                                                              
-┌──(root㉿kali)-[~/docker-projects/hello-docker]
-└─# ls
-index.html
-                                                                              
-┌──(root㉿kali)-[~/docker-projects/hello-docker]
-└─# nano index.html
-                                                                              
-┌──(root㉿kali)-[~/docker-projects/hello-docker]
-└─# just see the above file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dockerized Nginx on Kali</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      color: #00ffcc;
+      font-size: 3em;
+      text-shadow: 2px 2px 10px rgba(0, 255, 204, 0.8);
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello from 🚀 Dockerized Nginx on Kali!</h1>
+</body>
+</html>
