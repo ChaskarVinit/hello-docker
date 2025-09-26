@@ -19,4 +19,4 @@ index.html
 └─# nano index.html
                                                                               
 ┌──(root㉿kali)-[~/docker-projects/hello-docker]
-└─#
+└─# just see the above file
